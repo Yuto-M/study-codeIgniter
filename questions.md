@@ -1,0 +1,4 @@
+- locationディレクティブのtry_filesとは
+- locationディレクティブのfastcgi系のやつ
+- rootディレクティブとは
+- `datastore`のVOLUME指定とは
