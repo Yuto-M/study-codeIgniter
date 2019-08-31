@@ -21,3 +21,14 @@ phpのコンテナに入る
 ## phpmyadmin
 下記にアクセス
 http://127.0.0.1:8888/
+
+## phpリンター関係
+phpmd
+```
+composer phpmd
+```
+
+phpcs
+```
+composer phpcs
+```

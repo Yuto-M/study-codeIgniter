@@ -4,10 +4,12 @@
 - ユーザー登録
 - ログイン
 - ログアウト
-- phpmd導入
+- ~~phpmd導入~~
 - phpcs導入
-- migration用のファイル作成
-- migrationファイルをhttps越しで叩かせないようにする
+- ~~migration用のファイル作成~~
+- ~~migrationファイルをhttps越しで叩かせないようにする~~
   - 参考 http://pneskin2.nekoget.com/press/?p=1958
-- dbforge classの説明を読む
+- ~~dbforge classの説明を読む~~
   - 公式doc http://codeigniter.jp/user_guide/3/database/forge.html
+- pre-commitでphpmdとphpcsを自動でチェックする
+  - 参考 https://qiita.com/kadoyau/items/eb4e7bc86588e6f33d16
