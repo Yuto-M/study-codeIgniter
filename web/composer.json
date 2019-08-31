@@ -18,6 +18,19 @@
 	},
 	"require-dev": {
 		"mikey179/vfsStream": "1.1.*",
-		"phpunit/phpunit": "4.* || 5.*"
+		"phpunit/phpunit": "4.* || 5.*",
+		"phpmd/phpmd": "^2.7",
+		"squizlabs/php_codesniffer": "*"
+	},
+	"scripts": {
+		"phpmd": [
+			"phpmd ./application/ text ./phpmd.xml"
+		],
+		"phpcs": [
+			"phpcs --standard=./phpcs_psr2.xml ./application/"
+		],
+		"phpcbf": [
+			"phpcbf --standard=./phpcs_psr2.xml ./applicaton/"
+		]
 	}
 }
