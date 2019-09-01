@@ -1,11 +1,11 @@
 <?php
-class Pages extends CI_Controller {
+class Pages extends CI_Controller
+{
     public function view($page = 'home')
     {
         // var_dump(APPPATH);exit();
 
-        if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
-        {
+        if (! file_exists(APPPATH.'views/pages/'.$page.'.php')) {
             show_404();
         }
 

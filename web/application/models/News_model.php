@@ -1,14 +1,14 @@
 <?php
-class News_model extends CI_Model {
+class News_model extends CI_Model
+{
     public function __construct()
     {
         $this->load->database();
     }
 
-    public function get_news($slug = FALSE)
+    public function get_news($slug = false)
     {
-        if (!$slug)
-        {
+        if (!$slug) {
             $query = $this->db->get('news');
             return $query->result_array();
         }
@@ -21,7 +21,7 @@ class News_model extends CI_Model {
     {
         $this->load->helper('url');
 
-        $slug = url_title($this->input->post('title'), 'dash', TRUE);
+        $slug = url_title($this->input->post('title'), 'dash', true);
 
         $data = [
             'title' => $this->input->post('title'),

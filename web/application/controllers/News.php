@@ -1,11 +1,11 @@
 <?php
-class News extends CI_Controller {
+class News extends CI_Controller
+{
     public function __construct()
     {
         parent::__construct();
         $this->load->model('news_model');
         $this->load->helper('url_helper');
-        fdsaf
     }
 
     public function index()
@@ -18,11 +18,10 @@ class News extends CI_Controller {
         $this->load->view('templates/footer', $data);
     }
 
-    public function view($slug = NULL)
+    public function view($slug = null)
     {
         $data['news_item'] = $this->news_model->get_news($slug);
-        if (empty($data['news_item']))
-        {
+        if (empty($data['news_item'])) {
             show_404();
         }
 
@@ -61,14 +60,11 @@ class News extends CI_Controller {
         ];
         $this->form_validation->set_rules($validation_rules);
 
-        if (!$this->form_validation->run())
-        {
+        if (!$this->form_validation->run()) {
             $this->load->view('templates/header', $data);
             $this->load->view('news/create');
             $this->load->view('templates/footer');
-        }
-        else
-        {
+        } else {
             $this->news_model->set_news();
             $this->load->view('news/success');
         }
