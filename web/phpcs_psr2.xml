@@ -7,9 +7,9 @@
     <exclude-pattern>*/application/tests/*</exclude-pattern>
     <exclude-pattern>*/application/logs/*</exclude-pattern>
     <exclude-pattern>*/application/cache/*</exclude-pattern>
+    <exclude-pattern>*/application/user_guide_src/*</exclude-pattern>
     <exclude-pattern>*/Docker/*</exclude-pattern>
     <exclude-pattern>*.js</exclude-pattern>
-    <exclude-pattern>*/web/*</exclude-pattern>
     <rule ref="PSR2">
       <exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
       <exclude name="Generic.Files.LineLength.TooLong"/>
