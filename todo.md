@@ -13,3 +13,4 @@
   - 公式doc http://codeigniter.jp/user_guide/3/database/forge.html
 - pre-commitでphpmdとphpcsを自動でチェックする
   - 参考 https://qiita.com/kadoyau/items/eb4e7bc86588e6f33d16
+- pre-commitの内容理解
